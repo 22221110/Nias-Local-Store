@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Nias Local Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fdf3e7;
+      color: #3b1f14;
+    }
+
+    header {
+      background: linear-gradient(135deg, #7b0f12, #b31b1b);
+      color: #f5d38b;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+
+    nav {
+      background-color: #7b0f12;
+      text-align: center;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #f5d38b;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #7b0f12;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      transition: transform 0.3s;
+    }
+
+    .card:hover { transform: translateY(-8px); }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-body h3 {
+      margin-top: 0;
+      color: #7b0f12;
+    }
+
+    .price {
+      color: #b31b1b;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #7b0f12;
+      color: #f5d38b;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .btn:hover { background-color: #b31b1b; }
+
+    .about {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      line-height: 1.8;
+    }
+
+    footer {
+      background-color: #3b1f14;
+      color: #f5d38b;
+      text-align: center;
+      padding: 25px 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="LogoProduk.jpg" alt="Logo Nias Local Store">
+  <h1>Nias Local Store</h1>
+  <p>Produk Budaya Asli Nias Selatan</p>
+</header>
+
+<nav>
+  <a href="#produk">Produk</a>
+  <a href="#tentang">Tentang Kami</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<div class="container" id="produk">
+  <h2 class="section-title">Produk Unggulan</h2>
+
+  <div class="products">
+    <div class="card">
+      <img src="BajuAdat.jpg" alt="Logo Baju Adat">
+      <div class="card-body">
+        <h3>Baju Adat Nias Selatan</h3>
+        <div class="price">Rp 750.000</div>
+        <a href="#" class="btn">Pesan Sekarang</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Aksesoris.jpeg" alt="Logo Aksesoris">
+      <div class="card-body">
+        <h3>Aksesoris Adat Nias</h3>
+        <div class="price">Rp 150.000</div>
+        <a href="#" class="btn">Pesan Sekarang</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="SelendangNias.png" alt="Logo Selendang">
+      <div class="card-body">
+        <h3>Selendang</h3>
+        <div class="price">Rp 100.000</div>
+        <a href="#" class="btn">Pesan Sekarang</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="tentang">
+  <h2 class="section-title">Tentang Kami</h2>
+  <div class="about">
+    Nias Local Store adalah website penjualan produk budaya Nias Selatan yang bertujuan untuk melestarikan budaya lokal dan mempromosikannya melalui platform e-bisnis modern.
+  </div>
+</div>
+
+<div class="container" id="kontak">
+  <h2 class="section-title">Kontak</h2>
+  <div class="about">
+    WhatsApp: 
+    <a href="https://wa.me/6285260158352" target="_blank">
+      0852-6015-8352
+    </a><br>
+    Email: 
+    <a href="deviwaana15@gmail.com">
+      deviwaana15@gmail.com
+    </a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Devi Indah Lestari Waana </p>
+</footer>
+
+</body>
+</html>
